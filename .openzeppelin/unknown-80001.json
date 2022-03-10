@@ -1,0 +1,856 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x14d06335A0F429a43166bD41453a438c36E37BCe",
+    "txHash": "0x342dd877dbd73bab9c7f24414eda76f4013479615a09b20bfb29f9e7e66dea3a"
+  },
+  "proxies": [
+    {
+      "address": "0x22072b1f6fB48b2594309aDc63Fb35F493D876d9",
+      "txHash": "0x36ee60914292e8d14c332b8da14dc92f404317af99754c4f7ac9391e9f69cd82",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x38775500Cdf3ebb1540e20dfDce66b736A0814f1",
+      "txHash": "0xc4738f0603a64b627adc9804bb6ab9cde0d5b3759f74cea0300a74259d5c1bee",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xb67fE8005FfE7cd32AeF5CC9bcbA392b229b94Ef",
+      "txHash": "0xb92e8e92d521de3fb7493ebfbf924f61bfbbc6504656029344e816f7f09ee123",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0100Ae0feFE2B1EcC9802645407D822BA1aDCcCF",
+      "txHash": "0x566238b185a616c2affda793f67dfecfec8a9989d5c9ee791f1984fc9a7669ef",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x495A6Eb082A3D90CA5ada43bf27E7a7cd9a401Ca",
+      "txHash": "0x611cb7605e82dcc6a0aeb35bac1871e222fe44ba3aee0c05dc54f9326961c9cf",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x7613474c9e88089b154a0aC60196DFE554b8fFd7",
+      "txHash": "0xf6cccd52e44852e681d7124126287f414a46a02dcc83b0a534723a55d9246dcc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xcF1a847432AC42aB128B8657C4209B52434C6bD8",
+      "txHash": "0xf70767be7d7bfb943013d034483303b12ccdd517dd26c61f161788c565e4fda2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8166431963e1907b1BcB5c43Fd8EBFB98b002405",
+      "txHash": "0xe605f64567ad6dcfd32c9ef22178173932e60b254eb7f9f058c34cff1b6af20b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xBEb4D30b756502494DFe1184c14e6C76637fa7Cc",
+      "txHash": "0x59262e86ca9902262c54364095479e6fff068e0b491bdbae77082b1216445abd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xf55995E975deA637BA4595910e725E90733077F0",
+      "txHash": "0x76e8058e03998259e0f9f7930d6eeb66b7ec0287c6d283d4cd20ac0b46750a6e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8C53A7F8C74177dfF3d8bD7F823B9Ca191d309B9",
+      "txHash": "0xf3692b7f4d851ebc709a876bba91aaf8e73950b8e4b68359185230ef30264709",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xBC37d26f5Ec2F6a4CD4a9dd864655F123D9fF005",
+      "txHash": "0x0dea00274a105bcf735ed05d782ab718d1c6c90ae86c9ddb07658cd484ab04c4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xE4ADD693629695417acE3d693Cbe2c25Cf570846",
+      "txHash": "0xbd9ba5de07e1ff918bf2850f8f22228a7e0a5ce98eb8fa4c6a94c475b0ec57ee",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x70d73cC41FA2647Ee775816657AcAbA3B8B47D4B",
+      "txHash": "0x46cf7e6053bafc145ae0a9ab17928ddf750815575c6dedfb904b92f3653041ea",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xD4980703c43c0cdb84CD8cDAcD5f700F67102f11",
+      "txHash": "0x31d9b66729c81cfaf0e19bdda7865abb88f19a1750c48d6bc649a2a02c8336b5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8a93dF8B0D1Ee071f8B6C978851E9553123aa269",
+      "txHash": "0x239cf021731cf0466a78cfccaabf258b224a87b30a90037895b89c8464969286",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "7e3d963243d9f3e38b1f6167007f01a237fa869fc31c1f85debb02e86dd90da3": {
+      "address": "0xe1661a0C486069a2Dd90A1560cC5f08Bd2bcc881",
+      "txHash": "0x3a0e6631f5ed623e50edb0d6a77cad3cc26e1d025f26bb700088ecd5978b6a60",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "workerDatePayMap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_struct(Pay)582_storage))",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:65"
+          },
+          {
+            "label": "workerDateMap",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:67"
+          },
+          {
+            "label": "partnerDateWorkerMap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_array(t_string_storage)dyn_storage))",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:67"
+          },
+          {
+            "label": "workers",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:68"
+          },
+          {
+            "label": "partners",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:72"
+          },
+          {
+            "label": "workerMap",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Worker)537_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:74"
+          },
+          {
+            "label": "partnerMap",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Partner)565_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:77"
+          },
+          {
+            "label": "thanksAdmin",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_address",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:78"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(string => uint256[])"
+          },
+          "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_array(t_string_storage)dyn_storage))": {
+            "label": "mapping(string => mapping(uint256 => string[]))"
+          },
+          "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_struct(Pay)582_storage))": {
+            "label": "mapping(string => mapping(uint256 => struct Thanks.Pay))"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Partner)565_storage)": {
+            "label": "mapping(string => struct Thanks.Partner)"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Worker)537_storage)": {
+            "label": "mapping(string => struct Thanks.Worker)"
+          },
+          "t_mapping(t_uint256,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(uint256 => string[])"
+          },
+          "t_mapping(t_uint256,t_struct(Pay)582_storage)": {
+            "label": "mapping(uint256 => struct Thanks.Pay)"
+          },
+          "t_string_memory_ptr": {
+            "label": "string"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(Partner)565_storage": {
+            "label": "struct Thanks.Partner",
+            "members": [
+              {
+                "label": "partnerLicenseId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klaytnAcc",
+                "type": "t_address"
+              },
+              {
+                "label": "initialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositType",
+                "type": "t_uint256"
+              },
+              {
+                "label": "addDeposit",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "addDepositDate",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "salaryDay",
+                "type": "t_uint256"
+              },
+              {
+                "label": "realtimeDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "partnerState",
+                "type": "t_uint256"
+              },
+              {
+                "label": "partnerHashData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isReg",
+                "type": "t_bool"
+              },
+              {
+                "label": "deposit",
+                "type": "t_array(t_uint256)dyn_storage"
+              }
+            ]
+          },
+          "t_struct(Pay)582_storage": {
+            "label": "struct Thanks.Pay",
+            "members": [
+              {
+                "label": "workerEmail",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "payState",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payReqDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payReqAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "repaymentDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "repaymentAmount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_struct(Worker)537_storage": {
+            "label": "struct Thanks.Worker",
+            "members": [
+              {
+                "label": "workerEmail",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "partnerLicenseId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klaytnAcc",
+                "type": "t_address"
+              },
+              {
+                "label": "blackWorkerState",
+                "type": "t_bool"
+              },
+              {
+                "label": "workerHashData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isReg",
+                "type": "t_bool"
+              },
+              {
+                "label": "serviceFeeRate",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "c7181087ee4f6bb055757977e961cd5e0ca2f48bf4fd698f656346ffad2859da": {
+      "address": "0xdb5c6A77B7666fEBd166459F4c8A1E2D66279f1D",
+      "txHash": "0x975e06df3ee57e22884dfec92d6f6e96a75a06365414df9ffded4bc923573c0e",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "workerDatePayMap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_struct(Pay)582_storage))",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:65"
+          },
+          {
+            "label": "workerDateMap",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:67"
+          },
+          {
+            "label": "partnerDateWorkerMap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_array(t_string_storage)dyn_storage))",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:67"
+          },
+          {
+            "label": "workers",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:68"
+          },
+          {
+            "label": "partners",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:72"
+          },
+          {
+            "label": "workerMap",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Worker)537_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:74"
+          },
+          {
+            "label": "partnerMap",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Partner)565_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:77"
+          },
+          {
+            "label": "thanksAdmin",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_address",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:78"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(string => uint256[])"
+          },
+          "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_array(t_string_storage)dyn_storage))": {
+            "label": "mapping(string => mapping(uint256 => string[]))"
+          },
+          "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_struct(Pay)582_storage))": {
+            "label": "mapping(string => mapping(uint256 => struct Thanks.Pay))"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Partner)565_storage)": {
+            "label": "mapping(string => struct Thanks.Partner)"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Worker)537_storage)": {
+            "label": "mapping(string => struct Thanks.Worker)"
+          },
+          "t_mapping(t_uint256,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(uint256 => string[])"
+          },
+          "t_mapping(t_uint256,t_struct(Pay)582_storage)": {
+            "label": "mapping(uint256 => struct Thanks.Pay)"
+          },
+          "t_string_memory_ptr": {
+            "label": "string"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(Partner)565_storage": {
+            "label": "struct Thanks.Partner",
+            "members": [
+              {
+                "label": "partnerLicenseId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klaytnAcc",
+                "type": "t_address"
+              },
+              {
+                "label": "initialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositType",
+                "type": "t_uint256"
+              },
+              {
+                "label": "addDeposit",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "addDepositDate",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "salaryDay",
+                "type": "t_uint256"
+              },
+              {
+                "label": "realtimeDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "partnerState",
+                "type": "t_uint256"
+              },
+              {
+                "label": "partnerHashData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isReg",
+                "type": "t_bool"
+              },
+              {
+                "label": "deposit",
+                "type": "t_array(t_uint256)dyn_storage"
+              }
+            ]
+          },
+          "t_struct(Pay)582_storage": {
+            "label": "struct Thanks.Pay",
+            "members": [
+              {
+                "label": "workerEmail",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "payState",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payReqDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payReqAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "repaymentDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "repaymentAmount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_struct(Worker)537_storage": {
+            "label": "struct Thanks.Worker",
+            "members": [
+              {
+                "label": "workerEmail",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "partnerLicenseId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klaytnAcc",
+                "type": "t_address"
+              },
+              {
+                "label": "blackWorkerState",
+                "type": "t_bool"
+              },
+              {
+                "label": "workerHashData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isReg",
+                "type": "t_bool"
+              },
+              {
+                "label": "serviceFeeRate",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "5544be014125909d8fac82e5999f8a72ec7020beaea2e07ad7245788a27edb66": {
+      "address": "0x93551612fCA1168b54734429d405936308ab6862",
+      "txHash": "0x2eb3f98bf38be4c31198cb15b93469e12ce50b9f4ca725fba37ef41faa0192ff",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "workerDatePayMap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_struct(Pay)582_storage))",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:65"
+          },
+          {
+            "label": "workerDateMap",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:67"
+          },
+          {
+            "label": "partnerDateWorkerMap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_array(t_string_storage)dyn_storage))",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:67"
+          },
+          {
+            "label": "workers",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:68"
+          },
+          {
+            "label": "partners",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:72"
+          },
+          {
+            "label": "workerMap",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Worker)537_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:74"
+          },
+          {
+            "label": "partnerMap",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Partner)565_storage)",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:77"
+          },
+          {
+            "label": "thanksAdmin",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_address",
+            "contract": "Thanks",
+            "src": "contracts/Thanks.sol:78"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(string => uint256[])"
+          },
+          "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_array(t_string_storage)dyn_storage))": {
+            "label": "mapping(string => mapping(uint256 => string[]))"
+          },
+          "t_mapping(t_string_memory_ptr,t_mapping(t_uint256,t_struct(Pay)582_storage))": {
+            "label": "mapping(string => mapping(uint256 => struct Thanks.Pay))"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Partner)565_storage)": {
+            "label": "mapping(string => struct Thanks.Partner)"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Worker)537_storage)": {
+            "label": "mapping(string => struct Thanks.Worker)"
+          },
+          "t_mapping(t_uint256,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(uint256 => string[])"
+          },
+          "t_mapping(t_uint256,t_struct(Pay)582_storage)": {
+            "label": "mapping(uint256 => struct Thanks.Pay)"
+          },
+          "t_string_memory_ptr": {
+            "label": "string"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(Partner)565_storage": {
+            "label": "struct Thanks.Partner",
+            "members": [
+              {
+                "label": "partnerLicenseId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klaytnAcc",
+                "type": "t_address"
+              },
+              {
+                "label": "initialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositType",
+                "type": "t_uint256"
+              },
+              {
+                "label": "addDeposit",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "addDepositDate",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "salaryDay",
+                "type": "t_uint256"
+              },
+              {
+                "label": "realtimeDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "partnerState",
+                "type": "t_uint256"
+              },
+              {
+                "label": "partnerHashData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isReg",
+                "type": "t_bool"
+              },
+              {
+                "label": "deposit",
+                "type": "t_array(t_uint256)dyn_storage"
+              }
+            ]
+          },
+          "t_struct(Pay)582_storage": {
+            "label": "struct Thanks.Pay",
+            "members": [
+              {
+                "label": "workerEmail",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "payState",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payReqDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payReqAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "repaymentDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "repaymentAmount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_struct(Worker)537_storage": {
+            "label": "struct Thanks.Worker",
+            "members": [
+              {
+                "label": "workerEmail",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "partnerLicenseId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klaytnAcc",
+                "type": "t_address"
+              },
+              {
+                "label": "blackWorkerState",
+                "type": "t_bool"
+              },
+              {
+                "label": "workerHashData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isReg",
+                "type": "t_bool"
+              },
+              {
+                "label": "serviceFeeRate",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    }
+  }
+}
