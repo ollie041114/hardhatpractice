@@ -1,28 +1,17 @@
-import abi from "../abi/Thanks.json" assert {type: 'json'};
-import _Common from '@ethereumjs/common'
+import abi from "../abi/Thanks.json";
 import {} from 'dotenv/config';
 import dotenv from 'dotenv';
-
-dotenv.config({path: '../test.env'});
-
-import Common, { Chain, Hardfork } from '@ethereumjs/common'
 import pkg from '@ethereumjs/tx';
-const { FeeMarketEIP1559Transaction } = pkg;
+const { Transaction } = pkg;
+dotenv.config({path: '../.env'});
+import _Common from '@ethereumjs/common'
+const Common = _Common.default
 
-
-const customCommon = Common.new Common({
-    chain: 'ropsten',
-    supportedHardforks: ['byzantium', 'constantinople', 'petersburg'],
-  })
-// 'mainnet',
-// {
-//   name: '127.0.0.1',
-//   networkId: process.env.chainId,
-//   chainId: process.env.chainId,
-// },
-// 'london',
+const customChainParams = { name: 'matic-mumbai', chainId: 80001, networkId: 80001 }
+const common = Common.forCustomChain('goerli', customChainParams);
 
 import Web3 from "web3";
+
 
 const account1 = process.env.address;
 const privateKey1 = Buffer.from(process.env.PRIVATE_KEY, 'hex');
@@ -35,37 +24,34 @@ export const web3 = new Web3(new Web3.providers.HttpProvider(process.env.polygon
 export const contract = new web3.eth.Contract(contractABI, contractAddress);
 
 
-web3.eth.getBlock("latest", false, (error, result) => {
-   console.log("hass gasssss: ", result.gasLimit);
- });
-
 export async function signedTransaction(func, globalCallback){
     async function myFunction(callback){
         web3.eth.getTransactionCount(account1, (err, txCount) => {
             const txObject = {
-                nonce:    web3.utils.toHex(txCount),
-                gasLimit: "0x02625a00",
-                maxPriorityFeePerGas: "0x01",
-                maxFeePerGas: "0xff",
-                //from: account1,
-                to: contractAddress,
-                type: "0x02",
-                data: func
+                "chainId": process.env.chainId,
+                "nonce":    web3.utils.toHex(txCount),
+                "gasLimit": "0x02625a00",
+                // maxPriorityFeePerGas: "0x01",
+                // maxFeePerGas: "0xff",
+                "to": contractAddress,
+                "type": "0x02",
+                "data": func
             }
             console.log(contractAddress);
             console.log(account1);        
-            var tx = FeeMarketEIP1559Transaction.fromTxData(txObject,  { common: customCommon });
+            var tx = new Transaction(txObject,  { common: common });
             tx.sign(privateKey1);
             var stx = tx.serialize();
             
-            web3.eth.sendSignedTransaction('0x' + stx.toString('hex'), async (err, hash) => {
-                 if (err) { console.log(err);
-                    return;
-                }
-                 var transactionHash = hash;
-                 callback(transactionHash);
-                 console.log("transaction hash is "+transactionHash);
-            });
+            // web3.eth.sendSignedTransaction('0x' + stx.toString('hex'), async (err, hash) => {
+            //      if (err) { console.log(err);
+            //         return;
+            //     }
+            //      var transactionHash = hash;
+            //      callback(transactionHash);
+            //      console.log("transaction hash is "+transactionHash);
+            // }
+            // );
             })
         }
         const expectedBlockTime = 1000; 

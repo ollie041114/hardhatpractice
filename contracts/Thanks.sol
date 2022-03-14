@@ -57,6 +57,7 @@ contract Thanks is Initializable{
     mapping (string => Partner) public partnerMap;// partnerLicenseId - Partner
     address public thanksAdmin; //thanks admin klaytn account address
     
+    
     modifier isNewWorker(string memory workerEmail){//근로자 중복 가입 방지
         require(workerMap[workerEmail].isReg == false, "already exist worker");
         _;

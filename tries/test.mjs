@@ -1,6 +1,5 @@
 import {ContractAPI} from "./contractapi.mjs";
 import {EthereumHandler} from './ethereumHandler.mjs';
-
 const contract = new EthereumHandler();
 
 contract.newWorker(
@@ -9,6 +8,7 @@ contract.newWorker(
     "0x0000000000000000000000000000000000000000",
     "hashData"
     ).then(result => {
+        console.log(result)
     }
 );
 

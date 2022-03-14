@@ -1,31 +1,34 @@
 import {} from 'dotenv/config';
 import dotenv from 'dotenv';
-import path from 'path';
-import {fileURLToPath} from 'url';
-import Web3 from "web3";
-import abi from "../abi/Thanks.json" assert {type: 'json'};
+import abi from "../abi/Thanks.json";
 import { ethers } from "ethers";
 
-dotenv.config({path: '../test.env'});
+dotenv.config({path: '../.env'});
 
 export class ContractAPI{
   constructor(){
-    this.provider = new ethers.providers.JsonRpcProvider(process.env.polygonRPC);
+    
+    this.provider = new ethers.providers.InfuraProvider(process.env.polygonRPC);
     this.signer = new ethers.Wallet(process.env.PRIVATE_KEY, this.provider);
     this.address = process.env.thanksAddress;
     this.Contract = new ethers.Contract(this.address, abi, this.signer);  
-    this.gasLimit = {
-
+    this.options = {
+      type: 2,
+      maxPriorityFeePerGas: "1000000", // Recommended maxPriorityFeePerGas
+      maxFeePerGas: "10000000", // Recommended maxFeePerGas
+      value: "0",
+      gasLimit: "2100000"
     };
   }
 
   async newWorker(...information) {
      try {
+      information.push(this.options)
       const result = await this.Contract.functions.newWorker.apply(information, information);
       const a = await this.provider.getTransaction(result.hash);
       let code = await this.provider.call(a);
     } catch (err) {
-        console.log(err.error);
+        console.log(err);
     }
   }
 

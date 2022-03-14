@@ -1,0 +1,5 @@
+class Investigator {
+    constructor(){
+        
+    }
+}
